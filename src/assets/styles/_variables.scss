@@ -1,0 +1,34 @@
+$cGreen: #39be0b;
+$cBlue: #3f4b94;
+$cRed: #e81808;
+$cText: darken($cBlue, 20%);
+
+$shadow: #0008 1px 1px 8px;
+$shadowLong: #0008 2px 2px 12px;
+$shadowShort: #0003 1px 1px 4px;
+$radius: 20px;
+$animFast: 200ms ease-out;
+
+$font: 400 16px/1.5em 'Montserrat', sans-serif;
+$fontFamily: 'Montserrat';
+$fontBold: 700 16px/1.5em 'Montserrat', sans-serif;
+$fontFamilyBold: 'Montserrat';
+
+$mediaSizes: (
+  xs: 320px,
+  s: 480px,
+  m: 768px,
+  l: 1024px,
+  xl: 1224px,
+);
+
+@mixin media($breakPoint) {
+  @media (min-width: map-get($mediaSizes, $breakPoint)) {
+    @content;
+  }
+}
+
+@mixin access {
+  position: absolute;
+  left: -9999em;
+}

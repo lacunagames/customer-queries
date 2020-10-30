@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+    url(../fonts/montserrat.woff2) format('woff2');
+}
+
+* {
+  box-sizing: border-box;
+
+  &::selection {
+    background: #a6c5ff;
+  }
+}
+
+.access {
+  @include access;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: map-get($mediaSizes, 's') - 1) {
+  .hide-xs {
+    display: none !important;
+  }
+}
+
+@include media(s) {
+  .hide-gt-xs {
+    display: none !important;
+  }
+}
+
+@media (min-width: map-get($mediaSizes, 's')) and (max-width: map-get($mediaSizes, 'm') - 1) {
+  .hide-s {
+    display: none !important;
+  }
+}
+
+@include media(m) {
+  .hide-gt-s {
+    display: none !important;
+  }
+}
+
+@media (min-width: map-get($mediaSizes, 'm')) and (max-width: map-get($mediaSizes, 'l') - 1) {
+  .hide-m {
+    display: none !important;
+  }
+}
+
+@include media(l) {
+  .hide-gt-m {
+    display: none !important;
+  }
+}
+
+@media (min-width: map-get($mediaSizes, 'l')) and (max-width: map-get($mediaSizes, 'xl') - 1) {
+  .hide-l {
+    display: none !important;
+  }
+}
+
+@include media(xl) {
+  .hide-xl,
+  .hide-gt-l {
+    display: none !important;
+  }
+}
+
+strong {
+  font-weight: 700;
+}

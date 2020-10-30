@@ -1,0 +1,87 @@
+form {
+  max-width: 600px;
+  .info {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+    border-left: 2px solid $cBlue;
+    padding: 3px 0 3px 10px;
+  }
+
+  .form-row {
+    position: relative;
+    margin-bottom: 15px;
+
+    &.button-row {
+      text-align: right;
+    }
+  }
+
+  label {
+    display: block;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 -5px;
+    font-size: 16px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    outline: none;
+    background: #fff;
+    border: 1px solid $cBlue;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px;
+    margin-bottom: 5px;
+
+    &:hover,
+    &:focus {
+      border-color: darken($cBlue, 20%);
+    }
+  }
+
+  textarea {
+    min-height: 100px;
+  }
+
+  p.error {
+    color: $cRed;
+    font-size: 14px;
+  }
+
+  .asterisk:before {
+    content: '*';
+    color: $cRed;
+    font-weight: 700;
+    padding: 0 5px;
+  }
+
+  .error-summary {
+    color: $cRed;
+    margin: 5px 0 20px;
+    border-left: 2px solid $cRed;
+    padding: 3px 0 3px 10px;
+    text-align: left;
+
+    .intro {
+      font-size: 16px;
+    }
+
+    label {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 0 5px 0 0;
+      margin: 0;
+    }
+    li {
+      font-size: 14px;
+      margin: 0 0 5px 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

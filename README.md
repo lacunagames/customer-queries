@@ -1,5 +1,5 @@
 # Customer Queries
 
-To get up and running 'npm install' then 'npm start'.
+To get up and running use 'npm install' and then 'npm start'.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with Create React App.
